@@ -93,7 +93,7 @@ def getData(db, subjects, db_filepath='../datasets/', hrir_type='trunc_64', ear=
             hear = []
             for e in ear:
                 hrir_ds_loc = 'hrir_'+e+'/'+hrir_type
-                cur_h = list(-subj[hrir_ds_loc][:])
+                cur_h = list(subj[hrir_ds_loc][:])
                 hear.append(cur_h)
             hrir.append(hear)
             subjs.append(name)
